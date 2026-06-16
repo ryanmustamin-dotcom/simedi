@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI-MEDI</title>
+    <style>
+        /* Menghilangkan margin bawaan browser dan scrollbar pada halaman utama */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Container iframe agar memenuhi seluruh layar monitor / HP */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styling iframe agar responsif dan bersih */
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-container">
+        <!-- 
+          Masukkan link Google Apps Script Anda pada atribut 'src' di bawah ini 
+          Sesuai dengan struktur pada berkas
+        -->
+        <iframe 
+            id="app" 
+            src="https://script.google.com/macros/s/AKfycbzp_4nKK3agYMGJp1lBdzQcsH641Kl4xEVKmB44ZfUFJqj5wf4EGr6qQABrVSAwcJLA/exec" 
+            scrolling="yes" 
+            allowfullscreen="true" 
+            webkitallowfullscreen="true">
+        </iframe>
+    </div>
+
+</body>
+</html>
